@@ -3,6 +3,7 @@ import pandas as pd
 import feedparser
 from bs4 import BeautifulSoup
 
+
 def getSoupObject(article_URL):
     page = requests.get(article_URL)
     soup = BeautifulSoup(page.content, 'html.parser')
